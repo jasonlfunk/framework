@@ -1,6 +1,30 @@
 # Release Notes for 6.x
 
-## [Unreleased](https://github.com/laravel/framework/compare/v6.20.9...6.x)
+## [Unreleased](https://github.com/laravel/framework/compare/v6.20.13...6.x)
+
+
+## [v6.20.13 (2021-01-19)](https://github.com/laravel/framework/compare/v6.20.12...v6.20.13)
+
+### Fixed
+- Fixed empty html mail ([#35941](https://github.com/laravel/framework/pull/35941))
+
+
+## [v6.20.12 (2021-01-13)](https://github.com/laravel/framework/compare/v6.20.11...v6.20.12)
+
+
+## [v6.20.11 (2021-01-13)](https://github.com/laravel/framework/compare/v6.20.10...v6.20.11)
+
+### Fixed
+- Limit expected bindings ([#35865](https://github.com/laravel/framework/pull/35865))
+
+
+## [v6.20.10 (2021-01-12)](https://github.com/laravel/framework/compare/v6.20.9...v6.20.10)
+
+### Added
+- Added new line to `DetectsLostConnections` ([#35790](https://github.com/laravel/framework/pull/35790))
+
+### Fixed
+- Fixed error from missing null check on PHP 8 in `Illuminate\Validation\Concerns\ValidatesAttributes::validateJson()` ([#35797](https://github.com/laravel/framework/pull/35797))
 
 
 ## [v6.20.9 (2021-01-05)](https://github.com/laravel/framework/compare/v6.20.8...v6.20.9)

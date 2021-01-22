@@ -1,6 +1,53 @@
 # Release Notes for 8.x
 
-## [Unreleased](https://github.com/laravel/framework/compare/v8.21.0...8.x)
+## [Unreleased](https://github.com/laravel/framework/compare/v8.23.1...8.x)
+
+
+## [v8.23.1 (2021-01-19)](https://github.com/laravel/framework/compare/v8.23.0...v8.23.1)
+
+### Fixed
+- Fixed empty html mail ([#35941](https://github.com/laravel/framework/pull/35941))
+
+
+## [v8.23.0 (2021-01-19)](https://github.com/laravel/framework/compare/v8.22.1...v8.23.0)
+
+### Added
+- Added `Illuminate\Database\Concerns\BuildsQueries::sole()` ([#35869](https://github.com/laravel/framework/pull/35869), [29c7dae](https://github.com/laravel/framework/commit/29c7dae9b32af2abffa7489f4758fd67905683c3), [#35908](https://github.com/laravel/framework/pull/35908), [#35902](https://github.com/laravel/framework/pull/35902), [#35912](https://github.com/laravel/framework/pull/35912))
+- Added default parameter to throw_if / throw_unless ([#35890](https://github.com/laravel/framework/pull/35890))
+- Added validation support for TeamSpeak3 URI scheme ([#35933](https://github.com/laravel/framework/pull/35933))
+
+### Fixed
+- Fixed extra space on blade class components that are inline ([#35874](https://github.com/laravel/framework/pull/35874))
+- Fixed serialization of rate limited middleware ([f3d4dcb](https://github.com/laravel/framework/commit/f3d4dcb21dc66824611fdde95c8075b694825bf5), [#35916](https://github.com/laravel/framework/pull/35916))
+
+### Changed
+- Allow a specific seeder to be used in tests in `Illuminate\Foundation\Testing\RefreshDatabase::migrateFreshUsing()` ([#35864](https://github.com/laravel/framework/pull/35864))
+- Pass $key to closure in Collection and LazyCollection's reduce method as well ([#35878](https://github.com/laravel/framework/pull/35878))
+
+
+## [v8.22.1 (2021-01-13)](https://github.com/laravel/framework/compare/v8.22.0...v8.22.1)
+ 
+### Fixed
+- Limit expected bindings ([#35865](https://github.com/laravel/framework/pull/35865))
+
+
+## [v8.22.0 (2021-01-12)](https://github.com/laravel/framework/compare/v8.21.0...v8.22.0)
+
+### Added
+- Added new lines to `DetectsLostConnections` ([#35752](https://github.com/laravel/framework/pull/35752), [#35790](https://github.com/laravel/framework/pull/35790))
+- Added `Illuminate\Support\Testing\Fakes\EventFake::assertNothingDispatched()` ([#35835](https://github.com/laravel/framework/pull/35835))
+- Added reduce with keys to collections and lazy collections ([#35839](https://github.com/laravel/framework/pull/35839))
+
+### Fixed
+- Fixed error from missing null check on PHP 8 in `Illuminate\Validation\Concerns\ValidatesAttributes::validateJson()` ([#35797](https://github.com/laravel/framework/pull/35797))
+- Fix bug with RetryCommand ([4415b94](https://github.com/laravel/framework/commit/4415b94623358bfd1dc2e8f20e4deab0025d2d03), [#35828](https://github.com/laravel/framework/pull/35828))
+- Fixed `Illuminate\Testing\PendingCommand::expectsTable()` ([#35820](https://github.com/laravel/framework/pull/35820))
+- Fixed `morphTo()` attempting to map an empty string morph type to an instance ([#35824](https://github.com/laravel/framework/pull/35824))
+
+### Changes
+- Update `Illuminate\Http\Resources\CollectsResources::collects()` ([1fa20dd](https://github.com/laravel/framework/commit/1fa20dd356af21af6e38d95e9ff2b1d444344fbe))
+- "null" constraint prevents aliasing SQLite ROWID  ([#35792](https://github.com/laravel/framework/pull/35792))
+- Allow strings to be passed to the `report` function ([#35803](https://github.com/laravel/framework/pull/35803))
 
 
 ## [v8.21.0 (2021-01-05)](https://github.com/laravel/framework/compare/v8.20.1...v8.21.0)
